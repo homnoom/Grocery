@@ -30,6 +30,7 @@
 html {
     font-size: 62.5%;
     overflow-x: hidden;
+  
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
@@ -455,74 +456,7 @@ margin-top: -30%;
 }
 /*review ended*/
 
-/*blogs starts*/
-.blogs .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-    gap:2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
 
-.blogs .box-container .box{
-   
-    border:1px black solid;
-    text-align: center;
-   border-radius: .5rem;   
-    background: #fff;
-}
-.blogs .box-container .box:hover {
-    border-color: #ff7800;
-    
-}
-.blogs .box-container .box img{
-height: 25rem;
-width:100%;
-object-fit: cover;
-}
-.blogs .box-container .box .content{
-    padding: 2rem;
-}
-
-.blogs .box-container .box .content .icons{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1.5rem;
-    margin-bottom: 1rem;
-    border-bottom: var(--border);
-}
-.blogs .box-container .box .content .icons a{
-    color: var(--light-color);
-    font-size: 1.5rem;
-
-    
-}
-.blogs .box-container .box .content .icons a:hover{
-    color:var(--black);
-}
-.blogs .box-container .box .content .icons a .i{
-    fill:var(--orange);
-   padding-right: .5rem;
-  
-  
-  padding-bottom: 10%;
-
-}
-
-.blogs .box-container .box .content h3{
-    line-height: 1.8;
-    color: var(--black);
-    font-size: 2.2rem;
-    padding: .5rem 0;
-}
-.blogs .box-container .box .content p{
-    line-height: 1.8;
-    color: var(--light-color);
-    font-size: 1.5rem;
-    padding: .5rem 0;
-}
-/*blogs ended*/
 
 /*footer starts*/
 .footer{
@@ -540,12 +474,23 @@ object-fit: cover;
 .footer .box-container .i{
     padding: 0 .8rem;
 }
+
+
 .footer .box-container .box h3{
     font-size: 2.5rem;
     color: var(--black);
     padding: 1rem 0;
+ 
 }
-
+.footer .box-container .boxx{
+   
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+}
 .footer .box-container .box h3 .i{
     fill:var(--orange);
     
@@ -557,7 +502,7 @@ object-fit: cover;
     color:var(--light-color);
 padding: 1rem 0;
 text-align: left;
-margin-left: 30%;
+
 
 }
 .footer .box-container .box .links .i{
@@ -580,7 +525,7 @@ margin-left: 35%;
 
 .footer .box-container .box .link .i{
     fill: var(--orange);
-    padding: .5rem;
+   
 }
 .footer .box-container .box .link:hover .i{
     width:3rem;
@@ -595,7 +540,10 @@ margin-left: 35%;
     color:var(--light-color);
     padding: 1rem 0;
 }
-
+.footer .box-container .bicon{
+   
+    margin-left: 3rem;
+}
 .footer .box-container .box .share a .i{
 height: 4rem;
 width: 4rem;
@@ -615,7 +563,7 @@ text-align: center;
 }
 
 .footer .box-container .box .email{
-    width:100%;
+    width:50%;
     margin: .7rem 0;
     padding: 1rem;
     border-radius: .5rem;
@@ -650,6 +598,7 @@ color: var(--orange);
     
 }
 
+
 /*footer ends*/
 
 
@@ -659,7 +608,7 @@ color: var(--orange);
 
 
 /* Styles for screens smaller than 450px */
-@media (min-width: 450px) {
+@media (min-width: 400px) and (max-width: 500px){
     body {
         background-color: #fff;
         overflow: hidden;
@@ -782,9 +731,14 @@ margin-top: -30%;
     .heading {
         font-size: 2.5rem;
     }
-
+    
 .footer{
     text-align: center;
+}
+.footer .box-container .box .links .i{
+ padding: .01rem;
+
+   
 }
 
 
